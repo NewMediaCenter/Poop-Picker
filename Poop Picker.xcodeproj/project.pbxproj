@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86FDB8D113DDF79900B1C6A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8D013DDF79900B1C6A2 /* UIKit.framework */; };
+		86FDB8D313DDF79900B1C6A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8D213DDF79900B1C6A2 /* Foundation.framework */; };
+		86FDB8D513DDF79900B1C6A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8D413DDF79900B1C6A2 /* CoreGraphics.framework */; };
+		86FDB8DB13DDF79900B1C6A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86FDB8D913DDF79900B1C6A2 /* InfoPlist.strings */; };
+		86FDB8DD13DDF79900B1C6A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FDB8DC13DDF79900B1C6A2 /* main.m */; };
+		86FDB8E113DDF79900B1C6A2 /* Poop_PickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FDB8E013DDF79900B1C6A2 /* Poop_PickerAppDelegate.m */; };
+		86FDB8E413DDF79A00B1C6A2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FDB8E213DDF79A00B1C6A2 /* MainStoryboard.storyboard */; };
+		86FDB8E713DDF79A00B1C6A2 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FDB8E613DDF79A00B1C6A2 /* RootViewController.m */; };
+		86FDB8EA13DDF79A00B1C6A2 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FDB8E913DDF79A00B1C6A2 /* DataViewController.m */; };
+		86FDB8ED13DDF79A00B1C6A2 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FDB8EC13DDF79A00B1C6A2 /* ModelController.m */; };
+		86FDB8F513DDF79A00B1C6A2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8F413DDF79A00B1C6A2 /* SenTestingKit.framework */; };
+		86FDB8F613DDF79A00B1C6A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8D013DDF79900B1C6A2 /* UIKit.framework */; };
+		86FDB8F713DDF79A00B1C6A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8D213DDF79900B1C6A2 /* Foundation.framework */; };
+		86FDB8F813DDF79A00B1C6A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FDB8D413DDF79900B1C6A2 /* CoreGraphics.framework */; };
+		86FDB90013DDF79A00B1C6A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86FDB8FE13DDF79A00B1C6A2 /* InfoPlist.strings */; };
+		86FDB90213DDF79A00B1C6A2 /* Poop_PickerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 86FDB90113DDF79A00B1C6A2 /* Poop_PickerTests.h */; };
+		86FDB90413DDF79A00B1C6A2 /* Poop_PickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 86FDB90313DDF79A00B1C6A2 /* Poop_PickerTests.m */; };
+		F4170ACC1489265200E96B98 /* Tube.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4170ACB1489265200E96B98 /* Tube.jpg */; };
+		F4170ACF1489276E00E96B98 /* Ruler.png in Resources */ = {isa = PBXBuildFile; fileRef = F4170ACE1489276E00E96B98 /* Ruler.png */; };
+		F4170AD5148929EB00E96B98 /* CottontailScat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4170AD0148929EB00E96B98 /* CottontailScat.jpg */; };
+		F4170AD6148929EB00E96B98 /* coyote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4170AD1148929EB00E96B98 /* coyote.jpg */; };
+		F4170AD7148929EB00E96B98 /* DeerClumped.tif in Resources */ = {isa = PBXBuildFile; fileRef = F4170AD2148929EB00E96B98 /* DeerClumped.tif */; };
+		F4170AD8148929EB00E96B98 /* plop.tif in Resources */ = {isa = PBXBuildFile; fileRef = F4170AD3148929EB00E96B98 /* plop.tif */; };
+		F4170AD9148929EB00E96B98 /* RaccoonToilette.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4170AD4148929EB00E96B98 /* RaccoonToilette.jpg */; };
+		F4170AE31489371C00E96B98 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F4170AE21489371C00E96B98 /* icon.png */; };
+		F4170AE51489372400E96B98 /* icon@2.png in Resources */ = {isa = PBXBuildFile; fileRef = F4170AE41489372400E96B98 /* icon@2.png */; };
+		F445DD3514759E4200F61CA3 /* deer_scat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F445DD3314759E4200F61CA3 /* deer_scat.jpeg */; };
+		F445DD3614759E4200F61CA3 /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445DD3414759E4200F61CA3 /* logo.jpg */; };
+		F445DD3E1475A6B000F61CA3 /* Sphere.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F445DD3C1475A6B000F61CA3 /* Sphere.jpeg */; };
+		F445DD3F1475A6B000F61CA3 /* WhiteCap.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F445DD3D1475A6B000F61CA3 /* WhiteCap.jpeg */; };
+		F445DD411475ABB400F61CA3 /* Bird Poop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F445DD401475ABB400F61CA3 /* Bird Poop.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86FDB8F913DDF79A00B1C6A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86FDB8C313DDF79900B1C6A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86FDB8CB13DDF79900B1C6A2;
+			remoteInfo = "Poop Picker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		86FDB8CC13DDF79900B1C6A2 /* Scat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FDB8D013DDF79900B1C6A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86FDB8D213DDF79900B1C6A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86FDB8D413DDF79900B1C6A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86FDB8D813DDF79900B1C6A2 /* Poop Picker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Poop Picker-Info.plist"; sourceTree = "<group>"; };
+		86FDB8DA13DDF79900B1C6A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86FDB8DC13DDF79900B1C6A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86FDB8DE13DDF79900B1C6A2 /* Poop Picker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poop Picker-Prefix.pch"; sourceTree = "<group>"; };
+		86FDB8DF13DDF79900B1C6A2 /* Poop_PickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poop_PickerAppDelegate.h; sourceTree = "<group>"; };
+		86FDB8E013DDF79900B1C6A2 /* Poop_PickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Poop_PickerAppDelegate.m; sourceTree = "<group>"; };
+		86FDB8E313DDF79A00B1C6A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		86FDB8E513DDF79A00B1C6A2 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		86FDB8E613DDF79A00B1C6A2 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		86FDB8E813DDF79A00B1C6A2 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		86FDB8E913DDF79A00B1C6A2 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		86FDB8EB13DDF79A00B1C6A2 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		86FDB8EC13DDF79A00B1C6A2 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		86FDB8F313DDF79A00B1C6A2 /* Poop PickerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poop PickerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86FDB8F413DDF79A00B1C6A2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		86FDB8FD13DDF79A00B1C6A2 /* Poop PickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Poop PickerTests-Info.plist"; sourceTree = "<group>"; };
+		86FDB8FF13DDF79A00B1C6A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86FDB90113DDF79A00B1C6A2 /* Poop_PickerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Poop_PickerTests.h; sourceTree = "<group>"; };
+		86FDB90313DDF79A00B1C6A2 /* Poop_PickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Poop_PickerTests.m; sourceTree = "<group>"; };
+		F4170ACB1489265200E96B98 /* Tube.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Tube.jpg; sourceTree = SOURCE_ROOT; };
+		F4170ACE1489276E00E96B98 /* Ruler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ruler.png; sourceTree = SOURCE_ROOT; };
+		F4170AD0148929EB00E96B98 /* CottontailScat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CottontailScat.jpg; sourceTree = SOURCE_ROOT; };
+		F4170AD1148929EB00E96B98 /* coyote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coyote.jpg; sourceTree = SOURCE_ROOT; };
+		F4170AD2148929EB00E96B98 /* DeerClumped.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = DeerClumped.tif; sourceTree = SOURCE_ROOT; };
+		F4170AD3148929EB00E96B98 /* plop.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = plop.tif; sourceTree = SOURCE_ROOT; };
+		F4170AD4148929EB00E96B98 /* RaccoonToilette.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaccoonToilette.jpg; sourceTree = SOURCE_ROOT; };
+		F4170AE21489371C00E96B98 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F4170AE41489372400E96B98 /* icon@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2.png"; sourceTree = "<group>"; };
+		F445DD3314759E4200F61CA3 /* deer_scat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deer_scat.jpeg; sourceTree = SOURCE_ROOT; };
+		F445DD3414759E4200F61CA3 /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = SOURCE_ROOT; };
+		F445DD3C1475A6B000F61CA3 /* Sphere.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Sphere.jpeg; sourceTree = SOURCE_ROOT; };
+		F445DD3D1475A6B000F61CA3 /* WhiteCap.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = WhiteCap.jpeg; sourceTree = SOURCE_ROOT; };
+		F445DD401475ABB400F61CA3 /* Bird Poop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bird Poop.jpg"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86FDB8C913DDF79900B1C6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FDB8D113DDF79900B1C6A2 /* UIKit.framework in Frameworks */,
+				86FDB8D313DDF79900B1C6A2 /* Foundation.framework in Frameworks */,
+				86FDB8D513DDF79900B1C6A2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FDB8EF13DDF79A00B1C6A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FDB8F513DDF79A00B1C6A2 /* SenTestingKit.framework in Frameworks */,
+				86FDB8F613DDF79A00B1C6A2 /* UIKit.framework in Frameworks */,
+				86FDB8F713DDF79A00B1C6A2 /* Foundation.framework in Frameworks */,
+				86FDB8F813DDF79A00B1C6A2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86FDB8C113DDF79900B1C6A2 = {
+			isa = PBXGroup;
+			children = (
+				F4170AE41489372400E96B98 /* icon@2.png */,
+				F4170AE21489371C00E96B98 /* icon.png */,
+				86FDB8D613DDF79900B1C6A2 /* Poop Picker */,
+				86FDB8FB13DDF79A00B1C6A2 /* Poop PickerTests */,
+				86FDB8CF13DDF79900B1C6A2 /* Frameworks */,
+				86FDB8CD13DDF79900B1C6A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86FDB8CD13DDF79900B1C6A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86FDB8CC13DDF79900B1C6A2 /* Scat App.app */,
+				86FDB8F313DDF79A00B1C6A2 /* Poop PickerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86FDB8CF13DDF79900B1C6A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86FDB8D013DDF79900B1C6A2 /* UIKit.framework */,
+				86FDB8D213DDF79900B1C6A2 /* Foundation.framework */,
+				86FDB8D413DDF79900B1C6A2 /* CoreGraphics.framework */,
+				86FDB8F413DDF79A00B1C6A2 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86FDB8D613DDF79900B1C6A2 /* Poop Picker */ = {
+			isa = PBXGroup;
+			children = (
+				86FDB8DF13DDF79900B1C6A2 /* Poop_PickerAppDelegate.h */,
+				86FDB8E013DDF79900B1C6A2 /* Poop_PickerAppDelegate.m */,
+				86FDB8E213DDF79A00B1C6A2 /* MainStoryboard.storyboard */,
+				F445DD401475ABB400F61CA3 /* Bird Poop.jpg */,
+				F445DD3314759E4200F61CA3 /* deer_scat.jpeg */,
+				F445DD3414759E4200F61CA3 /* logo.jpg */,
+				F4170ACE1489276E00E96B98 /* Ruler.png */,
+				F4170AD0148929EB00E96B98 /* CottontailScat.jpg */,
+				F4170AD1148929EB00E96B98 /* coyote.jpg */,
+				F4170AD2148929EB00E96B98 /* DeerClumped.tif */,
+				F4170AD3148929EB00E96B98 /* plop.tif */,
+				F4170AD4148929EB00E96B98 /* RaccoonToilette.jpg */,
+				F445DD3C1475A6B000F61CA3 /* Sphere.jpeg */,
+				F4170ACB1489265200E96B98 /* Tube.jpg */,
+				F445DD3D1475A6B000F61CA3 /* WhiteCap.jpeg */,
+				86FDB8E513DDF79A00B1C6A2 /* RootViewController.h */,
+				86FDB8E613DDF79A00B1C6A2 /* RootViewController.m */,
+				86FDB8E813DDF79A00B1C6A2 /* DataViewController.h */,
+				86FDB8E913DDF79A00B1C6A2 /* DataViewController.m */,
+				86FDB8EB13DDF79A00B1C6A2 /* ModelController.h */,
+				86FDB8EC13DDF79A00B1C6A2 /* ModelController.m */,
+				86FDB8D713DDF79900B1C6A2 /* Supporting Files */,
+			);
+			path = "Poop Picker";
+			sourceTree = "<group>";
+		};
+		86FDB8D713DDF79900B1C6A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86FDB8D813DDF79900B1C6A2 /* Poop Picker-Info.plist */,
+				86FDB8D913DDF79900B1C6A2 /* InfoPlist.strings */,
+				86FDB8DC13DDF79900B1C6A2 /* main.m */,
+				86FDB8DE13DDF79900B1C6A2 /* Poop Picker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86FDB8FB13DDF79A00B1C6A2 /* Poop PickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				86FDB90113DDF79A00B1C6A2 /* Poop_PickerTests.h */,
+				86FDB90313DDF79A00B1C6A2 /* Poop_PickerTests.m */,
+				86FDB8FC13DDF79A00B1C6A2 /* Supporting Files */,
+			);
+			path = "Poop PickerTests";
+			sourceTree = "<group>";
+		};
+		86FDB8FC13DDF79A00B1C6A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86FDB8FD13DDF79A00B1C6A2 /* Poop PickerTests-Info.plist */,
+				86FDB8FE13DDF79A00B1C6A2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86FDB8CB13DDF79900B1C6A2 /* Scat App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FDB90713DDF79A00B1C6A2 /* Build configuration list for PBXNativeTarget "Scat App" */;
+			buildPhases = (
+				86FDB8C813DDF79900B1C6A2 /* Sources */,
+				86FDB8C913DDF79900B1C6A2 /* Frameworks */,
+				86FDB8CA13DDF79900B1C6A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scat App";
+			productName = "Poop Picker";
+			productReference = 86FDB8CC13DDF79900B1C6A2 /* Scat App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86FDB8F213DDF79A00B1C6A2 /* Poop PickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86FDB90A13DDF79A00B1C6A2 /* Build configuration list for PBXNativeTarget "Poop PickerTests" */;
+			buildPhases = (
+				86FDB8EE13DDF79A00B1C6A2 /* Sources */,
+				86FDB8EF13DDF79A00B1C6A2 /* Frameworks */,
+				86FDB8F013DDF79A00B1C6A2 /* Resources */,
+				86FDB8F113DDF79A00B1C6A2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86FDB8FA13DDF79A00B1C6A2 /* PBXTargetDependency */,
+			);
+			name = "Poop PickerTests";
+			productName = "Poop PickerTests";
+			productReference = 86FDB8F313DDF79A00B1C6A2 /* Poop PickerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86FDB8C313DDF79900B1C6A2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 86FDB8C613DDF79900B1C6A2 /* Build configuration list for PBXProject "Poop Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86FDB8C113DDF79900B1C6A2;
+			productRefGroup = 86FDB8CD13DDF79900B1C6A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86FDB8CB13DDF79900B1C6A2 /* Scat App */,
+				86FDB8F213DDF79A00B1C6A2 /* Poop PickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86FDB8CA13DDF79900B1C6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FDB8DB13DDF79900B1C6A2 /* InfoPlist.strings in Resources */,
+				86FDB8E413DDF79A00B1C6A2 /* MainStoryboard.storyboard in Resources */,
+				F445DD3514759E4200F61CA3 /* deer_scat.jpeg in Resources */,
+				F445DD3614759E4200F61CA3 /* logo.jpg in Resources */,
+				F445DD3E1475A6B000F61CA3 /* Sphere.jpeg in Resources */,
+				F445DD3F1475A6B000F61CA3 /* WhiteCap.jpeg in Resources */,
+				F445DD411475ABB400F61CA3 /* Bird Poop.jpg in Resources */,
+				F4170ACC1489265200E96B98 /* Tube.jpg in Resources */,
+				F4170ACF1489276E00E96B98 /* Ruler.png in Resources */,
+				F4170AD5148929EB00E96B98 /* CottontailScat.jpg in Resources */,
+				F4170AD6148929EB00E96B98 /* coyote.jpg in Resources */,
+				F4170AD7148929EB00E96B98 /* DeerClumped.tif in Resources */,
+				F4170AD8148929EB00E96B98 /* plop.tif in Resources */,
+				F4170AD9148929EB00E96B98 /* RaccoonToilette.jpg in Resources */,
+				F4170AE31489371C00E96B98 /* icon.png in Resources */,
+				F4170AE51489372400E96B98 /* icon@2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FDB8F013DDF79A00B1C6A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FDB90013DDF79A00B1C6A2 /* InfoPlist.strings in Resources */,
+				86FDB90213DDF79A00B1C6A2 /* Poop_PickerTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		86FDB8F113DDF79A00B1C6A2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86FDB8C813DDF79900B1C6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FDB8DD13DDF79900B1C6A2 /* main.m in Sources */,
+				86FDB8E113DDF79900B1C6A2 /* Poop_PickerAppDelegate.m in Sources */,
+				86FDB8E713DDF79A00B1C6A2 /* RootViewController.m in Sources */,
+				86FDB8EA13DDF79A00B1C6A2 /* DataViewController.m in Sources */,
+				86FDB8ED13DDF79A00B1C6A2 /* ModelController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FDB8EE13DDF79A00B1C6A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86FDB90413DDF79A00B1C6A2 /* Poop_PickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86FDB8FA13DDF79A00B1C6A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86FDB8CB13DDF79900B1C6A2 /* Scat App */;
+			targetProxy = 86FDB8F913DDF79A00B1C6A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86FDB8D913DDF79900B1C6A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86FDB8DA13DDF79900B1C6A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		86FDB8E213DDF79A00B1C6A2 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86FDB8E313DDF79A00B1C6A2 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		86FDB8FE13DDF79A00B1C6A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86FDB8FF13DDF79A00B1C6A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86FDB90513DDF79A00B1C6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86FDB90613DDF79A00B1C6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86FDB90813DDF79A00B1C6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poop Picker/Poop Picker-Prefix.pch";
+				INFOPLIST_FILE = "Poop Picker/Poop Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86FDB90913DDF79A00B1C6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poop Picker/Poop Picker-Prefix.pch";
+				INFOPLIST_FILE = "Poop Picker/Poop Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		86FDB90B13DDF79A00B1C6A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Poop Picker.app/Poop Picker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poop Picker/Poop Picker-Prefix.pch";
+				INFOPLIST_FILE = "Poop PickerTests/Poop PickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		86FDB90C13DDF79A00B1C6A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Poop Picker.app/Poop Picker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Poop Picker/Poop Picker-Prefix.pch";
+				INFOPLIST_FILE = "Poop PickerTests/Poop PickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86FDB8C613DDF79900B1C6A2 /* Build configuration list for PBXProject "Poop Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FDB90513DDF79A00B1C6A2 /* Debug */,
+				86FDB90613DDF79A00B1C6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FDB90713DDF79A00B1C6A2 /* Build configuration list for PBXNativeTarget "Scat App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FDB90813DDF79A00B1C6A2 /* Debug */,
+				86FDB90913DDF79A00B1C6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86FDB90A13DDF79A00B1C6A2 /* Build configuration list for PBXNativeTarget "Poop PickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FDB90B13DDF79A00B1C6A2 /* Debug */,
+				86FDB90C13DDF79A00B1C6A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86FDB8C313DDF79900B1C6A2 /* Project object */;
+}
